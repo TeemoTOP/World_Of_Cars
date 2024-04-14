@@ -28,7 +28,6 @@ body{
 }
 .First2{
     display: flex;
-    justify-content: center;
 }
 .otherNames{
     display: flex;
@@ -40,65 +39,105 @@ body{
     text-transform: uppercase;
     color: #FF4500;
     }
-    #Name1{
+#Name1{
     position: static;
     font-size: 45px;
     padding-top: 4px;
     color: #FF4500;
     }
-    #Name2{
-        font-size: 45px;
-        color: rgb(255,215,0);
+#Name2{
+    font-size: 45px;
+    color: rgb(255,215,0);
     }
-    .start2{
-        display: flex; 
+#Name2{
+    font-size: 45px;
+    color: rgb(255,215,0);
     }
-    .First3{
-        display: inline;
-        font-size: 20px;
-        margin-right: 8px;
-        color: #FFD700;
-        padding-bottom: 8px;
+.start2{
+    display: flex; 
     }
-    .First-one{
-        text-align: left;
-        padding-top: 30px;
+.First3{
+    display: inline;
+    font-size: 20px;
+    margin-right: 8px;
+    color: #FFD700;
+    padding-bottom: 8px;
     }
-    .First-two{
-        text-align: center;
+.First-one{
+    text-align: left;
+    padding-top: 30px;
     }
-    .First-three{
-        text-align: right;
-        padding-top: 30px;
+.First-two{
+    text-align: center;
     }
-    #Big{
-        text-transform: uppercase;
+.First-three{
+    text-align: right;
+    padding-top: 30px;
     }
-    .start1-two{
-        background-image: url("BMW.jpeg");
-        background-size: no-repeat;
-        background-position: center;
-        background-size: cover;
-        height: 400px;
-        display: flex;
-        margin: 0px;
-        align-items: center;
-        justify-content: center;
+
+.start1-two{
+    background-image: url("ALL.jpg");
+    background-size: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: center;
     }
     #text-two{
         color: #FF4500;
         font-size: 55px;
     }
-    p::first-letter{
-        text-transform: uppercase;   
+    .Block-1{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
-    p{
-        font-size: 20px; 
-        margin-left: 8px;
+    .Information-1, .Information-2{ 
+       margin-top: 35px;
     }
-    .End{
-        display: flex;
-        justify-content: space-between;
+    .Price{
+        font-size: 45px;
+        color: #FF4500;
+        padding-top: 40px;
+    }
+    .Kraj{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    .Fuel{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    .Discount{
+        font-size: 45px;
+        color: #FF4500;
+        padding-top: 40px;
+    }
+    .Price{
+        text-decoration: line-through;
+        color: #FF4500;
+        text-decoration-color: rgb(0,0,0); 
+     }
+    .Price-1{
+        font-size: 35px;
+        padding-top: 30px;
+    }
+    .Block-2{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
+    }
+    .Fual-2{
+        font-size: 25px;
+        padding-top: 30px;
+    }
+    .Block-3{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10px;
     }
     .End1{
         background-color: rgb(0,0,0);
@@ -132,6 +171,27 @@ body{
         width: 200px;
         height: 180px;
     }
+    .photo-auto{
+        width: 400px;
+        height: 300px;
+    }
+    .First-photo{
+        margin-top: 35px;
+    }
+    .Second-photo{
+        margin-top: 35px;
+    }
+    .Third-photo{
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+    .auto{
+        text-align: center;
+        font-size: 25px;
+    }
+    .Big{
+        text-transform: uppercase;
+    }
     a{
         font-size: 20px;  
         color: #FFD700;
@@ -140,6 +200,13 @@ body{
     a:hover{
         color: #FF4500;
     }
+    .image-link{
+        display: inline-block;
+        transition: transform 0.3s ease-in-out;
+    }
+    .image-link:hover {
+        transform: scale(1.1);
+    }       
     @media all and (max-width: 1200px){
         .start1{
             display: flex; 
@@ -178,7 +245,7 @@ body{
             color: rgb(255,215,0);
         }
         .start1-two{
-            background-image: url("BMW.jpeg");
+            background-image: url("ALL.jpg");
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
@@ -198,4 +265,28 @@ body{
         #photo2{
             display: none;
         }
+        .Block-1, .Block-2, .Block-3{
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+        .Information-1, .Information-2{ 
+            margin: 0px;
+         }
+         .Price{
+            text-decoration: line-through;
+            color: #FF4500;
+            text-decoration-color: rgb(0,0,0); 
+         }
+         .Price-1{
+            padding-bottom: 35px;
+         }
+         .auto{
+            text-align: center;
+            font-size: 25px;
+        }
+        .Big{
+            text-transform: uppercase;
+        }
     }
+    

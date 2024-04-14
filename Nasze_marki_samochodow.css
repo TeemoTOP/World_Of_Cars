@@ -28,7 +28,6 @@ body{
 }
 .First2{
     display: flex;
-    justify-content: center;
 }
 .otherNames{
     display: flex;
@@ -71,11 +70,11 @@ body{
         text-align: right;
         padding-top: 30px;
     }
-    #Big{
+    .Big{
         text-transform: uppercase;
     }
     .start1-two{
-        background-image: url("BMW.jpeg");
+        background-image: url("background.jpg");
         background-size: no-repeat;
         background-position: center;
         background-size: cover;
@@ -89,16 +88,31 @@ body{
         color: #FF4500;
         font-size: 55px;
     }
-    p::first-letter{
-        text-transform: uppercase;   
-    }
-    p{
-        font-size: 20px; 
-        margin-left: 8px;
-    }
-    .End{
+    .marki{
         display: flex;
-        justify-content: space-between;
+        border: #000000;
+    }
+    .marki-1{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-right: 70px;
+        padding-left: 25px;
+    }
+    .marki-2{
+        padding: 70px;
+    }
+    .marki-3{
+        padding-top: 70px;
+        padding-bottom: 70px;
+        padding-left: 70px;
+    }
+    .auto{
+        text-align: center;
+        font-size: 25px;
+    }
+    .photo-auto{
+        width: 400px;
+        height: 300px;
     }
     .End1{
         background-color: rgb(0,0,0);
@@ -178,7 +192,7 @@ body{
             color: rgb(255,215,0);
         }
         .start1-two{
-            background-image: url("BMW.jpeg");
+            background-image: url("background.jpg");
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
@@ -197,5 +211,12 @@ body{
         }
         #photo2{
             display: none;
+        }
+        .marki{
+            display: flex;
+            flex-direction: column;
+        }
+        .marki-1, .marki-2, .marki-3{
+            padding-top: 45px;
         }
     }

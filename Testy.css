@@ -28,7 +28,6 @@ body{
 }
 .First2{
     display: flex;
-    justify-content: center;
 }
 .otherNames{
     display: flex;
@@ -71,11 +70,8 @@ body{
         text-align: right;
         padding-top: 30px;
     }
-    #Big{
-        text-transform: uppercase;
-    }
     .start1-two{
-        background-image: url("BMW.jpeg");
+        background-image: url("Test.jpg");
         background-size: no-repeat;
         background-position: center;
         background-size: cover;
@@ -89,17 +85,7 @@ body{
         color: #FF4500;
         font-size: 55px;
     }
-    p::first-letter{
-        text-transform: uppercase;   
-    }
-    p{
-        font-size: 20px; 
-        margin-left: 8px;
-    }
-    .End{
-        display: flex;
-        justify-content: space-between;
-    }
+
     .End1{
         background-color: rgb(0,0,0);
         display: flex;
@@ -132,12 +118,50 @@ body{
         width: 200px;
         height: 180px;
     }
+    .Video-all{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .Video-1{
+        padding: 10px;
+        text-align: center;
+    }
+    .Video-2{
+        padding: 10px;
+        text-align: center;
+    }
+    .Video-3{
+        padding: 10px;
+        text-align: center;
+    }
+    .link{
+        padding-top: 10px;
+    } 
+    a{
+        font-size: 20px;  
+        color: #000000;
+    }
+    a:hover{
+        color: #FF4500;
+    }
+    #text{
+        font-size: 20px; 
+        margin-left: 8px;
+    }
     a{
         font-size: 20px;  
         color: #FFD700;
         text-decoration: none;
     }
     a:hover{
+        color: #FF4500;
+    }
+    .L{
+        font-size: 20px; 
+        color: #000000;
+    }
+    .L:hover{
         color: #FF4500;
     }
     @media all and (max-width: 1200px){
@@ -178,7 +202,7 @@ body{
             color: rgb(255,215,0);
         }
         .start1-two{
-            background-image: url("BMW.jpeg");
+            background-image: url("Test.jpg");
             background-size: no-repeat;
             background-position: center;
             background-size: cover;
@@ -190,7 +214,7 @@ body{
         }
         #text-two{
             color: #FF4500;
-            font-size: 35px;
+            font-size: 55px;
         }
         #photo1{
             display: none;
@@ -198,4 +222,11 @@ body{
         #photo2{
             display: none;
         }
+        .Video-all{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
     }
+    

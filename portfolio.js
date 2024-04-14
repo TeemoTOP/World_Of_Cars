@@ -11,3 +11,4 @@ function capitalizeSentences(text) {
         return match.toUpperCase();
     });
 }
+
