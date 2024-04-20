@@ -1,5 +1,3 @@
-/*Test*\
-TEST
 <html lang="en"> 
     <head>
         <title>HOME-BMW</title>
